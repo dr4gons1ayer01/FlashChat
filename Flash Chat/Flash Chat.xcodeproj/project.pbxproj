@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEEBE1342BBD20000052F0CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBE1332BBD20000052F0CF /* AppDelegate.swift */; };
+		BEEBE1362BBD20000052F0CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBE1352BBD20000052F0CF /* SceneDelegate.swift */; };
+		BEEBE1382BBD20000052F0CF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBE1372BBD20000052F0CF /* WelcomeViewController.swift */; };
+		BEEBE13D2BBD20020052F0CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEBE13C2BBD20020052F0CF /* Assets.xcassets */; };
+		BEEBE1402BBD20020052F0CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEBE13E2BBD20020052F0CF /* LaunchScreen.storyboard */; };
+		BEEBE1542BBD21A10052F0CF /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBE1532BBD21A10052F0CF /* WelcomeView.swift */; };
+		BEEBE1572BBD22A80052F0CF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BEEBE1562BBD22A80052F0CF /* SnapKit */; };
+		BEEBE1592BBD22A80052F0CF /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BEEBE1582BBD22A80052F0CF /* SnapKit-Dynamic */; };
+		BEEBE15B2BBD2BBF0052F0CF /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBE15A2BBD2BBF0052F0CF /* RegisterView.swift */; };
+		BEEBE15D2BBD2EA40052F0CF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBE15C2BBD2EA40052F0CF /* LoginView.swift */; };
+		BEEBE15F2BBD33550052F0CF /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBE15E2BBD33550052F0CF /* ChatView.swift */; };
+		BEEBE1612BBD35E30052F0CF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBE1602BBD35E30052F0CF /* ChatViewController.swift */; };
+		BEEBE1632BBD36320052F0CF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBE1622BBD36320052F0CF /* RegisterViewController.swift */; };
+		BEEBE1652BBD367E0052F0CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBE1642BBD367E0052F0CF /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BEEBE1302BBD20000052F0CF /* Flash Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEEBE1332BBD20000052F0CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEEBE1352BBD20000052F0CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BEEBE1372BBD20000052F0CF /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		BEEBE13C2BBD20020052F0CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEEBE13F2BBD20020052F0CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEEBE1412BBD20020052F0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEEBE1532BBD21A10052F0CF /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		BEEBE15A2BBD2BBF0052F0CF /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		BEEBE15C2BBD2EA40052F0CF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BEEBE15E2BBD33550052F0CF /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		BEEBE1602BBD35E30052F0CF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		BEEBE1622BBD36320052F0CF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		BEEBE1642BBD367E0052F0CF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEEBE12D2BBD20000052F0CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEBE1572BBD22A80052F0CF /* SnapKit in Frameworks */,
+				BEEBE1592BBD22A80052F0CF /* SnapKit-Dynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEEBE1272BBD20000052F0CF = {
+			isa = PBXGroup;
+			children = (
+				BEEBE1322BBD20000052F0CF /* Flash Chat */,
+				BEEBE1312BBD20000052F0CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEEBE1312BBD20000052F0CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEEBE1302BBD20000052F0CF /* Flash Chat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEEBE1322BBD20000052F0CF /* Flash Chat */ = {
+			isa = PBXGroup;
+			children = (
+				BEEBE1502BBD20F30052F0CF /* Resources */,
+				BEEBE1512BBD21000052F0CF /* Model */,
+				BEEBE1522BBD210E0052F0CF /* View */,
+				BEEBE14F2BBD20CC0052F0CF /* Controllers */,
+				BEEBE13C2BBD20020052F0CF /* Assets.xcassets */,
+				BEEBE13E2BBD20020052F0CF /* LaunchScreen.storyboard */,
+				BEEBE1412BBD20020052F0CF /* Info.plist */,
+			);
+			path = "Flash Chat";
+			sourceTree = "<group>";
+		};
+		BEEBE14F2BBD20CC0052F0CF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BEEBE1372BBD20000052F0CF /* WelcomeViewController.swift */,
+				BEEBE1642BBD367E0052F0CF /* LoginViewController.swift */,
+				BEEBE1622BBD36320052F0CF /* RegisterViewController.swift */,
+				BEEBE1602BBD35E30052F0CF /* ChatViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BEEBE1502BBD20F30052F0CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BEEBE1332BBD20000052F0CF /* AppDelegate.swift */,
+				BEEBE1352BBD20000052F0CF /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEEBE1512BBD21000052F0CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEEBE1522BBD210E0052F0CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BEEBE1532BBD21A10052F0CF /* WelcomeView.swift */,
+				BEEBE15A2BBD2BBF0052F0CF /* RegisterView.swift */,
+				BEEBE15C2BBD2EA40052F0CF /* LoginView.swift */,
+				BEEBE15E2BBD33550052F0CF /* ChatView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEEBE12F2BBD20000052F0CF /* Flash Chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEEBE1442BBD20020052F0CF /* Build configuration list for PBXNativeTarget "Flash Chat" */;
+			buildPhases = (
+				BEEBE12C2BBD20000052F0CF /* Sources */,
+				BEEBE12D2BBD20000052F0CF /* Frameworks */,
+				BEEBE12E2BBD20000052F0CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flash Chat";
+			packageProductDependencies = (
+				BEEBE1562BBD22A80052F0CF /* SnapKit */,
+				BEEBE1582BBD22A80052F0CF /* SnapKit-Dynamic */,
+			);
+			productName = "Flash Chat";
+			productReference = BEEBE1302BBD20000052F0CF /* Flash Chat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEEBE1282BBD20000052F0CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					BEEBE12F2BBD20000052F0CF = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = BEEBE12B2BBD20000052F0CF /* Build configuration list for PBXProject "Flash Chat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEEBE1272BBD20000052F0CF;
+			packageReferences = (
+				BEEBE1552BBD22A80052F0CF /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = BEEBE1312BBD20000052F0CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEEBE12F2BBD20000052F0CF /* Flash Chat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEEBE12E2BBD20000052F0CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEBE1402BBD20020052F0CF /* LaunchScreen.storyboard in Resources */,
+				BEEBE13D2BBD20020052F0CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEEBE12C2BBD20000052F0CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEBE1382BBD20000052F0CF /* WelcomeViewController.swift in Sources */,
+				BEEBE1632BBD36320052F0CF /* RegisterViewController.swift in Sources */,
+				BEEBE1342BBD20000052F0CF /* AppDelegate.swift in Sources */,
+				BEEBE15F2BBD33550052F0CF /* ChatView.swift in Sources */,
+				BEEBE1362BBD20000052F0CF /* SceneDelegate.swift in Sources */,
+				BEEBE15D2BBD2EA40052F0CF /* LoginView.swift in Sources */,
+				BEEBE15B2BBD2BBF0052F0CF /* RegisterView.swift in Sources */,
+				BEEBE1612BBD35E30052F0CF /* ChatViewController.swift in Sources */,
+				BEEBE1652BBD367E0052F0CF /* LoginViewController.swift in Sources */,
+				BEEBE1542BBD21A10052F0CF /* WelcomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BEEBE13E2BBD20020052F0CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEEBE13F2BBD20020052F0CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEEBE1422BBD20020052F0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEEBE1432BBD20020052F0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEEBE1452BBD20020052F0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Flash Chat/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IvanSemenov.Flash-Chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEEBE1462BBD20020052F0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Flash Chat/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IvanSemenov.Flash-Chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEEBE12B2BBD20000052F0CF /* Build configuration list for PBXProject "Flash Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEEBE1422BBD20020052F0CF /* Debug */,
+				BEEBE1432BBD20020052F0CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEEBE1442BBD20020052F0CF /* Build configuration list for PBXNativeTarget "Flash Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEEBE1452BBD20020052F0CF /* Debug */,
+				BEEBE1462BBD20020052F0CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BEEBE1552BBD22A80052F0CF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BEEBE1562BBD22A80052F0CF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEEBE1552BBD22A80052F0CF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		BEEBE1582BBD22A80052F0CF /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEEBE1552BBD22A80052F0CF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BEEBE1282BBD20000052F0CF /* Project object */;
+}
