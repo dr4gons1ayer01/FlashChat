@@ -15,6 +15,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         let navVC = UINavigationController(rootViewController: WelcomeViewController())
+//        WelcomeViewController
+//        IQKeyboardManagerViewController
         window?.rootViewController = navVC
         window?.makeKeyAndVisible()
     }

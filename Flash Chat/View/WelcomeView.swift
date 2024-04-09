@@ -7,29 +7,24 @@
 
 import UIKit
 import SnapKit
+import CLTypingLabel
 
 class WelcomeView: UIView {
-    
-    private let lightningSymbol: UIImageView = {
-        let element = UIImageView(image: UIImage(systemName: "bolt.fill"))
-        element.tintColor = .systemYellow
-        return element
-    }()
-    private let label: UILabel = {
-        let element = UILabel()
-        element.text = "FlashChat"
+
+    let label: CLTypingLabel = {
+        let element = CLTypingLabel()
         element.font = .systemFont(ofSize: 42, weight: .bold)
-        element.textColor = UIColor(named: "BrandBlue")
+        element.textColor = UIColor(named: Constants.BrandColors.blue)
         return element
     }()
     let registerButton: UIButton = {
         let element = UIButton()
         element.setTitle("Register", for: .normal)
-        element.setTitleColor(UIColor(named: "BrandBlue"), for: .normal)
-        element.backgroundColor = UIColor(named: "BrandLightBlue")
+        element.setTitleColor(UIColor(named: Constants.BrandColors.blue), for: .normal)
+        element.backgroundColor = UIColor(named: Constants.BrandColors.lighBlue)
         element.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         element.layer.borderWidth = 1
-        element.layer.borderColor = UIColor(named: "BrandBlue")?.cgColor
+        element.layer.borderColor = UIColor(named: Constants.BrandColors.blue)?.cgColor
         element.layer.cornerRadius = 12
         return element
     }()
@@ -37,7 +32,7 @@ class WelcomeView: UIView {
         let element = UIButton()
         element.setTitle("Login", for: .normal)
         element.tintColor = .white
-        element.backgroundColor = UIColor(named: "BrandBlue")
+        element.backgroundColor = UIColor(named: Constants.BrandColors.blue)
         element.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         element.layer.cornerRadius = 12
         return element
@@ -51,18 +46,12 @@ class WelcomeView: UIView {
     }
     
     private func addSubviews() {
-        addSubview(lightningSymbol)
         addSubview(label)
         addSubview(registerButton)
         addSubview(loginButton)
     }
     
     private func addConstraints() {
-        lightningSymbol.snp.makeConstraints { make in
-            make.trailing.equalTo(label.snp.leading).offset(-10)
-            make.centerY.equalTo(label)
-            make.width.height.equalTo(42)
-        }
         
         label.snp.makeConstraints { make in
             make.centerX.equalToSuperview()

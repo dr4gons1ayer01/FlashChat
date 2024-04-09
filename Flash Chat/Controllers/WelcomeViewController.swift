@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class WelcomeViewController: UIViewController {
     
@@ -17,6 +18,27 @@ class WelcomeViewController: UIViewController {
         addAction()
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        startAnimating()
+    }
+    
+    func startAnimating() {
+        welcomeView.label.text = Constants.appName
+    }
+    
+//    func startAnimating() {
+//        welcomeView.label.text = ""
+//        var charIndex = 0.0
+//        let labelText = "⚡FlashChat"
+//        for letter in labelText {
+//            Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { timer in
+//                self.welcomeView.label.text?.append(letter)
+//            }
+//            charIndex += 1
+//        }
+//    }
 
     func addAction() {
         let registerTap = UIAction { tap in

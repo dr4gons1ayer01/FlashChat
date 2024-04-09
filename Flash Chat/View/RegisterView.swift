@@ -10,13 +10,13 @@ import SnapKit
 
 class RegisterView: UIView {
     
-    private let emailTextField: UITextField = {
+    let emailTextField: UITextField = {
         let element = UITextField()
         element.placeholder = "Email"
         element.font = UIFont.systemFont(ofSize: 20)
-        element.backgroundColor = UIColor(named: "BrandLightPurple")
+        element.backgroundColor = UIColor(named: Constants.BrandColors.lightPurple)
         element.layer.borderWidth = 1
-        element.layer.borderColor = UIColor(named: "BrandBlue")?.cgColor
+        element.layer.borderColor = UIColor(named: Constants.BrandColors.blue)?.cgColor
         element.layer.cornerRadius = 12
         element.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: 0))
         element.leftViewMode = .always
@@ -24,13 +24,13 @@ class RegisterView: UIView {
         return element
     }()
     
-    private let passwordTextField: UITextField = {
+    let passwordTextField: UITextField = {
         let element = UITextField()
         element.placeholder = "Password"
         element.font = UIFont.systemFont(ofSize: 20)
-        element.backgroundColor = UIColor(named: "BrandLightPurple")
+        element.backgroundColor = UIColor(named: Constants.BrandColors.lightPurple)
         element.layer.borderWidth = 1
-        element.layer.borderColor = UIColor(named: "BrandBlue")?.cgColor
+        element.layer.borderColor = UIColor(named: Constants.BrandColors.blue)?.cgColor
         element.layer.cornerRadius = 12
         element.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: 0))
         element.leftViewMode = .always
@@ -39,11 +39,11 @@ class RegisterView: UIView {
         return element
     }()
     
-    private let registerButton: UIButton = {
+    let registerButton: UIButton = {
         let element = UIButton()
         element.setTitle("Register", for: .normal)
         element.setTitleColor(.white, for: .normal)
-        element.backgroundColor = UIColor(named: "BrandBlue")
+        element.backgroundColor = UIColor(named: Constants.BrandColors.blue)
         element.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         element.layer.cornerRadius = 12
         return element
@@ -51,7 +51,7 @@ class RegisterView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor(named: "BrandLightBlue")
+        backgroundColor = UIColor(named: Constants.BrandColors.lighBlue)
         addSubviews()
         addConstraints()
     }

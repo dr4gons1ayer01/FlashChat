@@ -9,14 +9,8 @@ import UIKit
 import SnapKit
 
 class ChatView: UIView {
-    
-    private let tableView: UITableView = {
-        let tableView = UITableView()
-        // Настройки таблицы (например, регистрация ячейки, делегат и источник данных) можно добавить здесь
-        return tableView
-    }()
-    
-    private let messageTF: UITextField = {
+
+    let messageTF: UITextField = {
         let element = UITextField()
         element.placeholder = "Message"
         element.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: 0))
@@ -25,18 +19,18 @@ class ChatView: UIView {
         return element
     }()
     
-    private let bookButton: UIButton = {
+    let sendButton: UIButton = {
         let element = UIButton()
         element.setImage(UIImage(systemName: "airplane"), for: .normal)
         element.tintColor = .white
-        element.backgroundColor = UIColor(named: "BrandBlue")
+        element.backgroundColor = UIColor(named: Constants.BrandColors.blue)
         element.layer.cornerRadius = 12
         return element
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor(named: "BrandPurple")
+        backgroundColor = UIColor(named: Constants.BrandColors.purple)
         addSubviews()
         addConstraints()
     }
@@ -46,25 +40,20 @@ class ChatView: UIView {
     }
     
     private func addSubviews() {
-        addSubview(tableView)
         addSubview(messageTF)
-        addSubview(bookButton)
+        addSubview(sendButton)
     }
     
     private func addConstraints() {
-        tableView.snp.makeConstraints { make in
-            make.top.leading.trailing.equalToSuperview()
-            make.bottom.equalTo(messageTF.snp.top).offset(-20)
-        }
-        
+
         messageTF.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(20)
-            make.trailing.equalTo(bookButton.snp.leading).offset(-20)
+            make.trailing.equalTo(sendButton.snp.leading).offset(-20)
             make.bottom.equalTo(safeAreaLayoutGuide.snp.bottom).offset(-20)
             make.height.equalTo(40)
         }
         
-        bookButton.snp.makeConstraints { make in
+        sendButton.snp.makeConstraints { make in
             make.trailing.equalToSuperview().offset(-20)
             make.centerY.equalTo(messageTF)
             make.width.height.equalTo(40) 
