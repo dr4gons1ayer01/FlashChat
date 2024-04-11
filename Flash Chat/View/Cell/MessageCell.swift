@@ -6,13 +6,16 @@
 //
 
 import UIKit
+import SnapKit
 
 class MessageCell: UITableViewCell {
-    
+
     let messageBubbleView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor(named: Constants.BrandColors.purple)
-        view.layer.cornerRadius = 12 
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor(named: Constants.BrandColors.purple)?.cgColor
+        view.layer.cornerRadius = 20
         return view
     }()
     
@@ -23,10 +26,16 @@ class MessageCell: UITableViewCell {
         label.numberOfLines = 0
         return label
     }()
-    
-    let avatarImageView: UIImageView = {
+    let youImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "MeAvatar")
+        imageView.image = UIImage(named: "anna")
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+    
+    let meImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "ivan")
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
@@ -37,7 +46,7 @@ class MessageCell: UITableViewCell {
         setupConstraints()
     
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -45,23 +54,48 @@ class MessageCell: UITableViewCell {
     private func setupViews() {
         contentView.addSubview(messageBubbleView)
         messageBubbleView.addSubview(messageLabel)
-        contentView.addSubview(avatarImageView)
+        contentView.addSubview(youImageView)
+        contentView.addSubview(meImageView)
     }
-    
+
     private func setupConstraints() {
-        messageBubbleView.snp.makeConstraints { make in
-            make.top.leading.bottom.equalToSuperview().inset(10)
-            make.trailing.equalTo(avatarImageView.snp.leading).offset(-10)
-        }
-        
         messageLabel.snp.makeConstraints { make in
             make.edges.equalToSuperview().inset(10)
         }
         
-        avatarImageView.snp.makeConstraints { make in
-            make.trailing.bottom.equalToSuperview().offset(-10)
+        youImageView.snp.makeConstraints { make in
+            make.leading.equalToSuperview().offset(10)
+            make.centerY.equalToSuperview()
             make.width.height.equalTo(40)
+        }
+        
+        meImageView.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().offset(-10)
+            make.centerY.equalToSuperview()
+            make.width.height.equalTo(40)
+        }
+        
+        messageBubbleView.snp.makeConstraints { make in
+            make.top.bottom.equalToSuperview().inset(10)
+            make.leading.equalTo(youImageView.snp.trailing).offset(10)
+            make.trailing.equalTo(meImageView.snp.leading).offset(-10)
+            
         }
     }
 }
 
+import SwiftUI
+
+struct MessageCellProvider: PreviewProvider {
+    static var previews: some View {
+        ContainerView().ignoresSafeArea()
+    }
+    struct ContainerView: UIViewRepresentable {
+        let view = MessageCell()
+        
+        func makeUIView(context: Context) -> some UIView {
+            return view
+        }
+        func updateUIView(_ uiView: UIViewType, context: Context) { }
+    }
+}
